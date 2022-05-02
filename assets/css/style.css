@@ -1,26 +1,41 @@
 :root {
-    --primary: rgb(11, 12, 15);
-    --secondary: rgba(146, 204, 206, 1);
-    --tertiary: rgba(49, 52, 61, 1);
-    --dark: rgba(28, 29, 33, 1);
-    --light: rgba(238, 238, 247, 1);
-  }
-body{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    background-color:black;
-    color: white;
-    font-family: 'Radio Canada', sans-serif;
-    text-align: center;
+--background-color:rgb(241, 207, 225);
+--color:blue;
 }
-header {
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+nav{
+  display:flex;
+  justify-content: space-around;
+  position:sticky;
+  background-color: var(--background-color);
+  box-shadow: 0 3px 5px rgba(227, 184, 184, 0.1);
+  z-index: 1;
+  padding: 1.5rem 3.5rem;
+}
+nav h1{
+color:whitesmoke;
+font-weight:bolder;
+font-size:xx-large;
+font-family:'Tapestry';
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+nav a:hover {
+    color: var(--color);
+    border-bottom: 2px solid var(--color);
   }
-  header img{
+nav p{
+    color:whitesmoke;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  nav ul li {
+    font-weight:bolder;
+    font-size: larger;
+  }
+
+img{
     padding:5px;
     width: 300px;
     margin :50px 30px;
@@ -28,27 +43,38 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
 }
-#profile-image{
-    border-radius: 8px;
-    border: 6px solid red;
-    opacity: 1;
-    filter: grayscale(100%);
+section img{
+    display: flex;
+    justify-content:flex-end;
 }
+.profile-image{
+    border-radius: 8px;
+    opacity: 1;
+    filter: grayscale(50%);
+}
+header h1{
+    font-family:cursive;
+    font-weight: bolder;
+    text-decoration:none;
+    font-size: 3vw;
+    color:red;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
 
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
-  header h1{
-      font-family: 'monospace';
-      font-weight: bolder;
-      text-decoration: none;
-      font-size: 3vw;
-      color: white;
-      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    }
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(186, 0, 0, 0.5);
+  }
   .secondary-heading{
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    font-size:150%;
+    font-size:170%;
     font-weight: bolder;
+  }
+  #Aboutme{
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .para{
+      font-family:var(--dark);
+      font-size:130%;
   }
