@@ -122,5 +122,11 @@ img:hover {
   color:cornsilk;
   border-radius: 2px solid black;
 }
+.project1{
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
 
 
