@@ -99,28 +99,23 @@ img:hover {
 #Aboutme{
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     line-height:50px;
-    padding:15px
-
-
+    padding:15px;
+    font-size:32px;
   }
 .para{
   font-size:20px;
   color:cornsilk;
+  font-family:sans-serif;
 }
 .container{
 display: flex;
-flex-direction:column;
+flex-direction:row;
 justify-content:center;
 align-items: center;
 max-width: fit-content;
 min-width:fit-content;
-flex-grow:2;
 }
-section .project1{
-  width:600px;
-  height:200px;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  color:cornsilk;
+.project1{
   line-height:25px;
   padding: 0.3rem 0;
   font-size: 18px;
@@ -138,7 +133,7 @@ section .project1{
 
 }
 .secondary-heading{
-  font-size:35px;
+  font-size:20px;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   padding-top:15px;
 }
