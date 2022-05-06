@@ -5,15 +5,14 @@
 }
 nav{
   display:flex;
-  justify-content:right;
-  align-items:flex-start;
+  justify-content:space-around;
+  align-items:center;
   background-color: var(--background-color);
   box-shadow: 0 3px 5px rgba(227, 184, 184, 0.1);
-  z-index: 1;
+  /* z-index: 1; */
   opacity:70%;
-  /* width: 100px;
-  height:100px; ask question */
   padding-bottom:5px;
+  height:10vh;
 }
 .primary-heading{
   color:whitesmoke;
@@ -21,11 +20,6 @@ nav{
   font-size:36px;
   font-family: "Trirong", serif;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  margin:25px 50px 75px 2px;
-  padding-left:100px;
-  margin-right:700px;
-  padding-bottom:5px 5px 5px 10px;
-  text-align:center;
   }
 nav a:hover {
   color:darkgray;
@@ -109,23 +103,21 @@ img:hover {
 }
 .container{
 display: flex;
-flex-flow:row wrap;
-align-items: stretch;
+flex-direction:column;
+height:900px;
 }
-/* .container > section:large-image
-{flex-grow:8;
-} */
-/* #Projects{
-  flex-grow: 2;
-} */
+
 .project1{
   line-height:25px;
   padding: 0.3rem 0;
   font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align:center;
+  flex-grow: 1;
 }
-
+#Projects{
+flex-grow:2;
+}
 .container-2{
   display: flex;
   /* flex-wrap: wrap; */
@@ -178,15 +170,15 @@ nav{
   justify-content: center;
 }
 }
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 h1{
 width:20px;
 }
 }
 
 
-}
+} */ 
