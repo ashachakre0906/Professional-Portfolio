@@ -130,7 +130,7 @@ align-items: stretch;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -141,13 +141,19 @@ align-items: stretch;
 }
 .Contact-Section{
 display:inline;
-color:black;
-font-size: larger;
+color:darkblue;
+font-size: 20px;
 font-family: Georgia, 'Times New Roman', Times, serif;
+margin:20px;
+padding:10px;
 }
-#Contact a{
-font-size: medium;
+footer ul li{
+display: inline;
+margin:10px;
+padding:10px;
+font-weight: 800;
 }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
