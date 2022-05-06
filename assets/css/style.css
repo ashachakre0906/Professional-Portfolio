@@ -49,8 +49,9 @@ section{
   align-content: center;
   flex-wrap: nowrap;
   background-color: rgba(201, 76, 76, 0.3);
-  gap: 1rem;
-  padding:30px;
+  gap: 2rem;
+  padding:30px 10px 30px 10px;
+  border-radius: 20px;
 }
 article{
   display:flex;
@@ -62,13 +63,16 @@ article{
   padding:20px;
   box-shadow: 0px 2px 15px 2px #8b8eaf;
   border-radius: 20px;
+  padding-bottom:15px;
 }
 section img{
     padding:auto;
     width: 300px;
     height:300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
+    /* margin-bottom: 25px;
+    margin-top: 25px; */
+
   
 }
 .profile-image{
@@ -134,8 +138,8 @@ display:inline;
 color:darkblue;
 font-size: 20px;
 font-family: Georgia, 'Times New Roman', Times, serif;
-margin:20px;
-padding:10px;
+margin:25px;
+padding:20px;
 }
 footer ul li{
 display: inline;
@@ -145,8 +149,8 @@ font-weight: 800;
 
 }
 .placeholderimage{
-  width:180px;
-  height:180px;
+  width:250px;
+  height:250px;
 }
 
 
