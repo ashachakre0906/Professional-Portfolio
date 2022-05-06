@@ -128,8 +128,9 @@ align-items: stretch;
 
 .container-2{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
 }
@@ -139,9 +140,13 @@ align-items: stretch;
   padding-top:15px;
 }
 .Contact-Section{
+display:inline;
 color:black;
 font-size: larger;
 font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Contact a{
+font-size: medium;
 }
 
 /* Extra small devices (phones, 600px and down) */
