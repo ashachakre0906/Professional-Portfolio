@@ -36,8 +36,8 @@ nav ul {
   }
 nav ul li a{
     font-weight:700;
-    font-size:1.2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:1.5em;
+    font-family: "Trirong", serif;
     color:whitesmoke;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   }
@@ -102,7 +102,7 @@ img:hover {
 .para{
   font-size:20px;
   color:cornsilk;
-  font-family:sans-serif;
+  font-family: "Trirong", serif;
   line-height: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -144,13 +144,11 @@ height: 90%;
 }
 .projectslink{
   position:relative;
-  line-height: 10px;
-  z-index: 1;
+  z-index: 4;
   color: darkblue;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .Contact-Section{
 display:inline;
 color:darkblue;
@@ -196,15 +194,22 @@ nav{
   justify-content: center;
 }
 }
-/* Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {...}
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px){
-h1{
-width:20px;
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  nav {
+    background-color:cadetblue;
+  }
+  }
+  #large-image{
+    width:fit-content;
+  }
+ .container-2{
+   width:90%;
+ }
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
 }
-}
-
-
-} */ 
