@@ -98,6 +98,7 @@ img:hover {
   color:cornsilk;
   font-family:sans-serif;
   line-height: 30px;
+  padding-top: 20px;
 }
 .container{
 display: flex;
