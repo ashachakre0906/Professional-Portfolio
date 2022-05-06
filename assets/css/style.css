@@ -45,25 +45,26 @@ section{
   display:flex;
   flex-direction:row;
   justify-content:center;
-  /* align-items:flex-start; */
   align-content: center;
-  flex-wrap: nowrap;
   background-color: rgba(201, 76, 76, 0.3);
-  gap: 2rem;
-  padding:30px 10px 30px 10px;
-  border-radius: 20px;
+  gap: 1.5rem;
+  border-radius: 30px;
+  margin:10px;
 }
 article{
   display:flex;
   flex-direction:column;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
-  width:30%;
-  height:50%;
-  padding:20px;
+  width:40%;
+  height:60%;
   box-shadow: 0px 2px 15px 2px #8b8eaf;
-  border-radius: 20px;
-  padding-bottom:15px;
+  border-radius: 30px;
+  padding-bottom:10px;
+  padding-top:20px;
+  margin:25px;
+
 }
 section img{
     padding:auto;
@@ -91,47 +92,52 @@ img:hover {
     font-weight: bolder;
     font-size:xx-large;
   }
-
 #About{
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    line-height:50px;
-    font-size:32px;
+    line-height:10px;
+    font-size:25px;
+    height:50%;
   }
 .para{
   font-size:20px;
   color:cornsilk;
   font-family:sans-serif;
-  line-height: 30px;
-  padding-top: 20px;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+
 }
 .container{
 display: flex;
 flex-direction:column;
-height:1000px;
 }
-
 .project1{
   line-height:25px;
   padding: 0.3rem 0;
   font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align:center;
-  flex-grow: 3;
+  /* flex-grow: 3; */
 }
 #Projects{
-flex-grow:4;
+flex-grow:3;
+line-height: 15px;
 }
 .container-2{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 60%;
+  height: 80%;
+  background-color: darkgray;
+  border-radius:30px ;
 }
 .secondary-heading{
   font-size:30px;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   padding-top:15px;
+  padding-bottom: 15px;
 }
 .Contact-Section{
 display:inline;
