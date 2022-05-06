@@ -185,37 +185,28 @@ font-weight: 800;
 @media screen and (max-width: 768px) {
 nav {
     background-color: #bb8588;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
+  section{
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+  } 
 .placeholderimage{
-  width:auto;
+  width:200px;
 }
 #large-image{
-
+/* padding-left:20px; */
+width:250px;
 }
 }
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-section{flex-direction: column;
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+nav{
 }
 article{
-  width:100%;
-}
-.container{
-flex-direction:column;
-}
-nav ul{
-flex-direction: column;
-}
-h1{
-  width: 70%;
-  padding-left: 0px;
-  margin-right:0px;
-}
-nav{
   flex-direction:column;
-  justify-content: center;
 }
 }
-
