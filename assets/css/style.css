@@ -1,7 +1,10 @@
 :root {
-  background-color: rgba(201, 76, 76, 0.3);
---color:blue;
---font-family: "Roboto", sans-serf;
+--secondarybackground-color:dimgrey;
+--primarybackgroundcolor:rgb(145, 109, 115);
+--boxshadow: 0 3px 5px rgba(227, 184, 184, 0.1);
+--fontfamily: "Trirong", serif;
+--paracolor:cornsilk;
+--textshadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
 }
 nav{
   display:flex;
@@ -26,7 +29,7 @@ nav a:hover {
   }
 nav p{
     color:whitesmoke;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
 }
 nav ul {
     display: flex;
@@ -72,10 +75,6 @@ section img{
     width: 300px;
     height:300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* margin-bottom: 25px;
-    margin-top: 25px; */
-
-  
 }
 .profile-image{
     border-radius: 8px;
@@ -191,22 +190,42 @@ nav {
   }
   section{
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
+    gap:0em;
+    margin:5px;
   } 
 .placeholderimage{
   width:200px;
 }
 #large-image{
 /* padding-left:20px; */
-width:250px;
+width:300px;
+}
+article{
+ width:400px;
+ height:300px; 
+ padding-bottom:10px;
+ box-shadow: 10px 10px 20px 10px #8b8eaf;
+}
+.para{
+  text-align: center;
+  padding:10px;
+}
+#About{
+  font-size:36px;
+  text-shadow: 5px 5px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.container-2{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+}
+.Contact-Section{
+padding:20px;
+margin:auto;
 }
 }
 /* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
-nav{
-}
-article{
-  flex-direction:column;
-}
-}
+/* @media screen and (max-width: 576px)  */
