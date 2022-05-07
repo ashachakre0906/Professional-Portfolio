@@ -1,3 +1,4 @@
+/* Declared CSS variable */
 :root {
 --secondarybackground-color:dimgrey;
 --primarybackgroundcolor:rgb(145, 109, 115);
@@ -7,19 +8,22 @@
 --paracolor:cornsilk;
 --textshadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+/* Set the default margin and padding to the body */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Header and Nav is a Flex-item */
 nav{
   display:flex;
   justify-content:space-around;
+  /* Centers along the opposite axis */
   align-items:center;
   background-color:var(--secondarybackground-color);
-  /* box-shadow: 0 3px 5px rgba(66, 120, 120, 0.1); */
   opacity:70%;
   padding-bottom:5px;
+  /* describes the height of the viewport */
   height:15vh;
   border-radius:30px ;
   transition: all 0.25s ease-in;
@@ -31,9 +35,11 @@ nav{
   font-family:var(--fontfamily);
   text-shadow: var(--textshadow);
   }
+/* Changes the color when hover on the links */
 nav a:hover {
   color:#8b8eaf;
   }
+/* Unordered lists are displaying Flex */
 nav ul {
     display: flex;
     justify-content:flex-end;
@@ -47,31 +53,33 @@ nav ul li a{
     color:var(--navheader);
     text-shadow: var(--textshadow);
   }
+/* Converted main section to Flex and property is row 
+  so that each child items will be Flex item  */
 section{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-content: center;
-  background-color:var(--primarybackgroundcolor);
-  gap: 2.5rem;
-  border-radius: 30px;
-  margin:10px;
-}
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content: center;
+    background-color:var(--primarybackgroundcolor);
+    gap: 2.5rem;
+    border-radius: 30px;
+    margin:10px;
+  }
 article{
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  width:40%;
-  height:60%;
-  box-shadow: 0px 2px 15px 2px #8b8eaf;
-  border-radius: 30px;
-  padding-bottom:10px;
-  padding-top:20px;
-  margin:25px;
-
-}
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:40%;
+    height:60%;
+    box-shadow: 0px 2px 15px 2px #8b8eaf;
+    border-radius: 30px;
+    padding-bottom:10px;
+    padding-top:20px;
+    margin:25px;
+  
+  }
 section img{
     padding:auto;
     width: 300px;
@@ -109,37 +117,44 @@ img:hover {
   padding-bottom: 10px;
   text-align:center;
 }
+/* CSS Selectors created and made to display as flex*/
 .container{
 display: flex;
 flex-direction:column;
 }
 .project1{
-  position: relative;
   line-height:25px;
   padding: 0.3rem 0;
   font-size: 18px;
   font-family:var(--fontfamily);
   text-align:center;
+  /* Box-shadow around each boxes for this specific class */
   box-shadow: 0px 2px 15px 2px #8b8eaf;
 }
+/* Set the max-height and max-width for the project image */
 .project1 img{
   max-height:400px;
   max-width:400px;
   width:auto;
   height:auto;
 }
+/* CSS Selectors created for the anchor links so that they display like column */
 .project-content{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+/* Psuedo Selector used to provide gap between the anchor links 
+for each project-section  */
 .projectlinks a:not(:last-child){
 margin-right:10px;
 }
+/* Used flex-grow property for this id attribute so that my first box to grow 3 times the other box*/
 #Projects{
 flex-grow:3;
 }
+/* Styled my first Project Image by giving width and height */
 #large-image{
 width:90%;
 height: 90%;
@@ -159,13 +174,6 @@ height: 90%;
   padding-top:15px;
   padding-bottom: 15px;
 }
-/* .projectslink{
-  position:relative;
-  z-index: 4;
-  color: darkblue;
-  font-size: 20px;
-  font-family: var(--fontfamily);
-} */
 .Contact-Section{
 display:inline;
 color:darkblue;
