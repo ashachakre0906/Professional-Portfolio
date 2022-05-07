@@ -1,4 +1,4 @@
-/* Declared CSS variable */
+/* Declared CSS variable globally inside the :root selector */
 :root {
 --secondarybackground-color:dimgrey;
 --primarybackgroundcolor:rgb(145, 109, 115);
@@ -20,6 +20,7 @@ nav{
   justify-content:space-around;
   /* Centers along the opposite axis */
   align-items:center;
+  /* The var() function is used to insert the value of a CSS variable declared on the top */
   background-color:var(--secondarybackground-color);
   opacity:70%;
   padding-bottom:5px;
@@ -94,6 +95,7 @@ section img{
   padding: 0.625rem;
   border-radius: 6px;
 }
+/* Box shadow when hovering on image */
 img:hover {
     box-shadow: 0 0 2px 1px rgba(186, 0, 0, 0.5);
   }
@@ -102,6 +104,7 @@ img:hover {
     font-weight: bolder;
     font-size:xx-large;
   }
+/* Styled id attribute selector and given the text-shadow declared inside root selector */
 #About{
     text-shadow: var(--textshadow);
     line-height:10px;
@@ -150,7 +153,7 @@ for each project-section  */
 .projectlinks a:not(:last-child){
 margin-right:10px;
 }
-/* Used flex-grow property for this id attribute so that my first box to grow 3 times the other box*/
+/* Used flex-grow property for this id attribute so that my first box to grow 3 times comapre to the other boxes*/
 #Projects{
 flex-grow:3;
 }
@@ -159,10 +162,11 @@ flex-grow:3;
 width:90%;
 height: 90%;
 }
+/*CSS Selector created for footer section and displayed Flex */
 .container-2{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-evenly;
   align-items: center;
   height: 100%;
   background-color:var(--secondarybackground-color);
@@ -174,8 +178,9 @@ height: 90%;
   padding-top:15px;
   padding-bottom: 15px;
 }
+/* Used display Inline property so that they display side by side  */
 .Contact-Section{
-display:inline;
+display: inline;
 color:darkblue;
 font-size: 20px;
 font-family: var(--fontfamily);
@@ -194,10 +199,10 @@ font-weight: 800;
   height:250px;
   border-radius:10px;
 }
-/* Tablets max-width: 992px */
+/* Tablets max-width: 992px changes the background-color */
 @media screen and (max-width: 992px) {
   nav {
-    background-color:cadetblue;
+    background-color:darkslategray;
   }
 }
   #large-image{
@@ -209,7 +214,6 @@ font-weight: 800;
 /* Large smartphones max-width: 768px */
 @media screen and (max-width: 768px) {
 nav {
-    background-color: #bb8588;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -226,7 +230,6 @@ nav {
   width:200px;
 }
 #large-image{
-/* padding-left:20px; */
 width:300px;
 }
 article{
@@ -239,6 +242,7 @@ article{
   text-align: center;
   padding:10px;
 }
+/* Change in the text shadow at this viewport */
 #About{
   font-size:36px;
   text-shadow: 5px 5px 5px black, 0 0 25px blue, 0 0 5px darkblue;
