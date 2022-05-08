@@ -7,6 +7,7 @@
 --fontfamily: "Trirong", serif;
 --paracolor:cornsilk;
 --textshadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+--hovershadow:0 0 2px 2px #8b8eaf , inset 0 0 5px 5px #8b8eaf;
 }
 /* Set the default margin and padding to the body */
 body {
@@ -79,8 +80,11 @@ article{
     padding-bottom:10px;
     padding-top:20px;
     margin:25px;
-  
   }
+/* Added box shadow around About me section*/
+article:hover{
+box-shadow:var(--hovershadow);
+}
 section img{
     padding:auto;
     width: 300px;
@@ -133,6 +137,9 @@ flex-direction:column;
   text-align:center;
   /* Box-shadow around each boxes for this specific class */
   box-shadow: 0px 2px 15px 2px #8b8eaf;
+}
+.project1:hover{
+  box-shadow:var(--hovershadow);
 }
 /* Set the max-height and max-width for the project image */
 .project1 img{
