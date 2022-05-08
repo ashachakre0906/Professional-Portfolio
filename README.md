@@ -70,7 +70,6 @@ margin-right:10px;
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Advanced_styling_effects)
 -[CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
--Refered for Basic writing and formatting syntax.
 
 ## Author
 - Linkedin - [@ashachakre](https://www.linkedin.com/in/ashachakre/)
