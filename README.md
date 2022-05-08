@@ -1,7 +1,8 @@
 ## Name of the project
 Professional Portfolio
 ## The Challenge
-Creating a web application(My portfolio) from scratch!
+Creating a web application(My professional portfolio) from scratch!
+We don't have enough web applications to showcase at this point, using placeholder images and names.
 ## User Story
 ```
 AS AN employer
@@ -24,6 +25,10 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+***Screenshot of Live Portfolio Webpage shows the hovering effects and UI scrolls to the corresponding section when user click on nav links***
+[Live Webpage](./assets/images/Professional%20Portfolio%20(1).webm)
+
+
 ## Links  
 [Github URL](https://github.com/ashachakre0906/Professional-Portfolio)<br>
 [Live URL](https://ashachakre0906.github.io/Professional-Portfolio/)<br>
@@ -33,11 +38,34 @@ THEN I am presented with a responsive layout that adapts to my viewport
 - CSS
 
 ## What I learned
+- learned how to write code from scratch.
+-learned Advanced CSS which includes Media queries,Flexbox,Reponsive design,CSS positioning,Psuedo Selectors,Psuedo-elements,CSS variables.
 
 ***Some HTML code which I'm proud of***
-
+- Declaring CSS variable globally inside the :root selector so that I can reuse throughout the document in CSS styling sheets***
+```
+:root {
+--secondarybackground-color:dimgrey;
+--primarybackgroundcolor:rgb(145, 109, 115);
+--navheader:whitesmoke;
+--boxshadow: 0 3px 5px rgba(227, 184, 184, 0.1);
+--fontfamily: "Trirong", serif;
+--paracolor:cornsilk;
+--textshadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+--hovershadow:0 0 2px 2px #8b8eaf , inset 0 0 5px 5px #8b8eaf;
+}
+```
+- Media query for max-width: 576px
+```
+@media screen and (max-width: 576px){
+.nav-bar li a{
+  font-size:0.8em;
+}
+```
 ### Useful resources
-- [w3schools](https://w3schools.com) - This helped me understand what semantic elements are.I would really like to refer this going forward to understand other concepts in HTML and CSS.
+- [w3schools](https://w3schools.com)
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Advanced_styling_effects)
+-[CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
 -Refered for Basic writing and formatting syntax.
 
