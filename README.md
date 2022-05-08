@@ -25,24 +25,20 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-***Screenshot of Live Portfolio Webpage shows the hovering effects and UI scrolls to the corresponding section when user click on nav links***
-[Live Webpage](./assets/images/Professional%20Portfolio%20(1).webm)
-
-
 ## Links  
 [Github URL](https://github.com/ashachakre0906/Professional-Portfolio)<br>
 [Live URL](https://ashachakre0906.github.io/Professional-Portfolio/)<br>
-## My process
+
 ## Built with
 - Semantic HTML5 markup
 - CSS
 
 ## What I learned
-- learned how to write code from scratch.
--learned Advanced CSS which includes Media queries,Flexbox,Reponsive design,CSS positioning,Psuedo Selectors,Psuedo-elements,CSS variables.
+- How to write code from scratch.
+- Advanced CSS which includes Media queries,Flexbox,Reponsive design,CSS positioning,Psuedo Selectors,Psuedo-elements,CSS variables.
 
 ***Some HTML code which I'm proud of***
-- Declaring CSS variable globally inside the :root selector so that I can reuse throughout the document in CSS styling sheets***
+- Declaring CSS variable globally inside the :root selector so that I can reuse throughout the document in CSS styling sheets.
 ```
 :root {
 --secondarybackground-color:dimgrey;
@@ -60,6 +56,13 @@ THEN I am presented with a responsive layout that adapts to my viewport
 @media screen and (max-width: 576px){
 .nav-bar li a{
   font-size:0.8em;
+}
+```
+- Psuedo selector used and provided margin which creates the gap between the anchor links 
+for each section.
+```
+.projectlinks a:not(:last-child){
+margin-right:10px;
 }
 ```
 ### Useful resources
