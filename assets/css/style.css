@@ -164,14 +164,21 @@ margin-right:10px;
 #Projects{
 flex-grow:3;
 }
+<<<<<<< HEAD
 /* Styled my first Project Image by giving width and height-This is bigger than other image */
+=======
+/* Styled my first Project Image by giving width and height */
+>>>>>>> bbad5c9895d814e95da3ab079197ff18bd9d8a40
 #large-image{
 width:90%;
 height: 90%;
 }
+<<<<<<< HEAD
 #large-image:hover{
   transform: scale(1.2);
 }
+=======
+>>>>>>> bbad5c9895d814e95da3ab079197ff18bd9d8a40
 /*CSS Selector created for footer section and displayed Flex */
 .container-2{
   display: flex;
