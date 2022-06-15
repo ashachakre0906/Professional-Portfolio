@@ -1,0 +1,276 @@
+/* Declared CSS variable globally inside the :root selector */
+:root {
+--secondarybackground-color:dimgrey;
+--primarybackgroundcolor:rgb(145, 109, 115);
+--navheader:whitesmoke;
+--boxshadow: 0 3px 5px rgba(227, 184, 184, 0.1);
+--fontfamily: "Trirong", serif;
+--paracolor:cornsilk;
+--textshadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+--hovershadow:0 0 2px 2px #8b8eaf , inset 0 0 5px 5px #8b8eaf;
+}
+/* Set the default margin and padding to the body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header and Nav is a Flex-item */
+nav{
+  display:flex;
+  justify-content:space-around;
+  /* Centers along the opposite axis */
+  align-items:center;
+  /* The var() function is used to insert the value of a CSS variable declared on the top */
+  background-color:var(--secondarybackground-color);
+  opacity:70%;
+  padding-bottom:5px;
+  /* describes the height of the viewport */
+  height:15vh;
+  border-radius:30px ;
+  transition: all 0.25s ease-in;
+}
+.primary-heading{
+  color:var(--navheader);
+  font-weight:bolder;
+  font-size:36px;
+  font-family:var(--fontfamily);
+  text-shadow: var(--textshadow);
+  }
+/* Changes the color when hover on the links */
+nav a:hover {
+  color:#8b8eaf;
+  }
+/* Unordered lists are displaying Flex */
+nav ul {
+    display: flex;
+    justify-content:flex-end;
+    align-items:right;
+    gap: 1.9rem;
+  }
+nav ul li a{
+    font-weight:700;
+    font-size:1.5em;
+    font-family:var(--fontfamily);
+    color:var(--navheader);
+    text-shadow: var(--textshadow);
+  }
+/* Converted main section to Flex and property is row 
+  so that each child items will be Flex item  */
+section{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content: center;
+    background-color:var(--primarybackgroundcolor);
+    gap: 2.5rem;
+    border-radius: 30px;
+    margin:10px;
+  }
+article{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:40%;
+    height:60%;
+    box-shadow: 0px 2px 15px 2px #8b8eaf;
+    border-radius: 30px;
+    padding-bottom:10px;
+    padding-top:20px;
+    margin:25px;
+  }
+/* Added box shadow around About me section*/
+article:hover{
+box-shadow:var(--hovershadow);
+}
+section img{
+    padding:auto;
+    width: 300px;
+    height:300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-image{
+    border-radius: 8px;
+    opacity: 1;
+    filter: grayscale(50%);
+    width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+/* Box shadow when hovering on image */
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(186, 0, 0, 0.5);
+  }
+.secondary-heading{
+    color: white;
+    font-weight: bolder;
+    font-size:xx-large;
+  }
+/* Styled id attribute selector and given the text-shadow declared inside root selector */
+#About{
+    text-shadow: var(--textshadow);
+    line-height:10px;
+    font-size:25px;
+    height:50%;
+  }
+.para{
+  font-size:20px;
+  color:var(--paracolor);
+  font-family: var(--fontfamily);
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+/* CSS Selectors created and made to display as flex*/
+.container{
+display: flex;
+flex-direction:column;
+}
+.project1{
+  line-height:25px;
+  padding: 0.3rem 0;
+  font-size: 18px;
+  font-family:var(--fontfamily);
+  text-align:center;
+  /* Box-shadow around each boxes for this specific class */
+  box-shadow: 0px 2px 15px 2px #8b8eaf;
+}
+.project1:hover{
+  box-shadow:var(--hovershadow);
+}
+/* Set the max-height and max-width for the project image */
+.project1 img{
+  max-height:400px;
+  max-width:400px;
+  width:auto;
+  height:auto;
+}
+/* CSS Selectors created for the anchor links so that they display like column */
+.project-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Psuedo Selector used to provide gap between the anchor links 
+for each project-section  */
+.projectlinks a:not(:last-child){
+margin-right:10px;
+}
+/* Used flex-grow property for this id attribute so that my first box to grow 3 times comapre to the other boxes*/
+#Projects{
+flex-grow:3;
+}
+/* Styled my first Project Image by giving width and height-This is bigger than other image */
+#large-image{
+width:90%;
+height: 90%;
+}
+#large-image:hover{
+  transform: scale(1.2);
+}
+/*CSS Selector created for footer section and displayed Flex */
+.container-2{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 100%;
+  background-color:var(--secondarybackground-color);
+  border-radius:30px;
+}
+.secondary-heading{
+  font-size:30px;
+  text-shadow: var(--textshadow);
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+/* Used display Inline property so that they display side by side  */
+.Contact-Section{
+display: inline;
+color:darkblue;
+font-size: 20px;
+font-family: var(--fontfamily);
+margin:25px;
+padding:20px;
+}
+footer ul li{
+display: inline;
+margin:10px;
+padding:10px;
+font-weight: 800;
+
+}
+.placeholderimage{
+  width:250px;
+  height:250px;
+  border-radius:10px;
+}
+/* Tablets max-width: 992px changes the background-color */
+@media screen and (max-width: 992px) {
+  nav {
+    background-color:darkslategray;
+  }
+}
+  #large-image{
+    width:fit-content;
+  }
+ .container-2{
+   width:100%;
+ }
+/* Large smartphones max-width: 768px */
+@media screen and (max-width: 768px) {
+nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  section{
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:0em;
+    margin:5px;
+    box-shadow:var(--boxshadow);
+  } 
+.placeholderimage{
+  width:200px;
+}
+#large-image{
+width:300px;
+}
+article{
+ width:400px;
+ height:300px; 
+ padding-bottom:10px;
+ box-shadow: 10px 10px 20px 10px #8b8eaf;
+}
+.para{
+  text-align: center;
+  padding:10px;
+}
+/* Change in the text shadow at this viewport */
+#About{
+  font-size:36px;
+  text-shadow: 5px 5px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.container-2{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+}
+.Contact-Section{
+padding:20px;
+margin:auto;
+}
+}
+/* Small smartphones - max-width: 576px */
+@media screen and (max-width: 576px){
+.nav-bar li a{
+  font-size:0.8em;
+}
+}
